@@ -1,4 +1,4 @@
-package Task1;
+package Management;
 
 public interface Management<O> {
     void add(O v);

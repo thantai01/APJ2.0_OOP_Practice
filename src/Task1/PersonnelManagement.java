@@ -1,5 +1,7 @@
 package Task1;
 
+import Management.Management;
+
 public class PersonnelManagement implements Management<Personnel> {
 
     private final Personnel[] list = new Personnel[5];
