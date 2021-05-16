@@ -14,6 +14,7 @@ public class Admission {
         }
         System.out.println("_____");
     }
+
     public void find(int id) {
         for (int i = 0; i < size; i++) {
             if(candidates[i].getId() == id) {
