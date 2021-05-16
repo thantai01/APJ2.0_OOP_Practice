@@ -3,9 +3,9 @@ package Task1;
 import Management.Management;
 
 public class PersonnelManagement implements Management<Personnel> {
-
-    private final Personnel[] list = new Personnel[5];
     private int size = 0;
+    private final Personnel[] list = new Personnel[100];
+
     @Override
     public void add(Personnel personnel) {
         list[size] = personnel;
