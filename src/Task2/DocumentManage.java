@@ -26,17 +26,23 @@ public class DocumentManage {
         System.out.println("____");
     }
 
-    public void searchBy(){
-        for (int i = 0; i < size; i++) {
-            if(documents[i]instanceof Book){
-                System.out.println(documents[i] + " , ");
-            } else if (documents[i]instanceof Magazine){
-                System.out.println(documents[i] + " , ");
-            } else if (documents[i]instanceof Newspaper) {
-                System.out.println(documents[i] + " , ");
-            } else {
-                System.out.println("No doc on libraries");
-            }
+    public void searchBy(int input){
+        switch (input) {
+            case 1: for (int i = 0; i < size; i++) {
+                if(documents[i]instanceof Book){
+                    System.out.println(documents[i] + " , ");
+                }
+            } break;
+            case 2:for (int i = 0; i < size; i++) {
+                if(documents[i]instanceof Magazine){
+                    System.out.println(documents[i] + " , ");
+                }
+            } break;
+            case 3: for (int i = 0; i < size; i++) {
+                if(documents[i]instanceof Newspaper){
+                    System.out.println(documents[i] + " , ");
+                }
+            } break;
         }
     }
 

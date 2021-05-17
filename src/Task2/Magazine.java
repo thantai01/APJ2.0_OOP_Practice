@@ -3,23 +3,23 @@ package Task2;
 import java.util.Date;
 
 public class Magazine extends Document {
-    private int versionNumber;
+    private int vol;
     private Date releaseDate;
 
     public Magazine(int codename, String brand, int amount, int versionNumber) {
         super(codename, brand, amount);
-        this.versionNumber = versionNumber;
+        this.vol = versionNumber;
     }
 
     public Magazine() {
     }
 
-    public int getVersionNumber() {
-        return versionNumber;
+    public int getVol() {
+        return vol;
     }
 
-    public void setVersionNumber(int versionNumber) {
-        this.versionNumber = versionNumber;
+    public void setVol(int versionNumber) {
+        this.vol = versionNumber;
     }
 
     public Date getReleaseDate() {
@@ -34,7 +34,7 @@ public class Magazine extends Document {
     public String toString() {
         return super.toString() +
                 "Magazine{" +
-                "versionNumber=" + versionNumber +
+                "versionNumber=" + vol +
                 ", releaseDate=" + releaseDate +
                 "} ";
     }
