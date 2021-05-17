@@ -20,7 +20,10 @@ public class Hotel {
         hotels[findCustomerID(id)] =null;
     }
 
-    public int roomAPaid() {
-        return 0;
+    public void customerInfo(){
+        for (int i = 0; i < n; i++) {
+            System.out.println(hotels[n]);
+        }
+        System.out.println("---------");
     }
 }

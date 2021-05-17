@@ -45,9 +45,9 @@ public class Customer {
         return room;
     }
 
-    public void setRoom(Room type) {
-        this.room = type;
-    }
+//    public void setRoom(Room ) {
+//        this.room = type;
+//    }
 
     public int getAmountOfRent() {
         return amountOfRent;
