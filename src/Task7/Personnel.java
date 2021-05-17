@@ -46,4 +46,14 @@ public class Personnel {
     public void setCode(String code) {
         this.code = code;
     }
+
+    @Override
+    public String toString() {
+        return "Personnel{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", hometown='" + hometown + '\'' +
+                ", code='" + code + '\'' +
+                '}';
+    }
 }
