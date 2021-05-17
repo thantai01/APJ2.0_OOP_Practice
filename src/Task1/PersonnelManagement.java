@@ -39,18 +39,4 @@ public class PersonnelManagement implements Management<Personnel> {
         System.out.println(".______.");
     }
 
-    public static void main(String[] args) {
-        PersonnelManagement list = new PersonnelManagement();
-        Personnel ps1 = new Personnel("Nguyen van A",24,"Male");
-        Personnel ps2 = new Personnel("Nguyen van B",26,"Male");
-        list.add(ps1);
-        list.add(ps2);
-        list.print();
-        System.out.println(ps2.getName() + " have location at " +(list.find(ps2.getName())+1));
-        Personnel ps3 = new Personnel("Hoang thi C",30,"Female");
-        list.edit("Nguyen van B",ps3);
-        list.print();
-        list.delete("Nguyen van A");
-        list.print();
-    }
 }

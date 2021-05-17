@@ -1,20 +1,14 @@
 package Task5;
 
-import java.util.Date;
-
-public class Room extends Customer {
+public class Room {
     private String type;
-    private Date startDate;
-    private Date endDate;
+    private int price;
 
-    public Room(String name, int age, int id, String type, Date startDate, Date endDate) {
-        super(name, age, id);
+    public Room() { }
+
+    public Room(String type, int price) {
         this.type = type;
-        this.startDate = startDate;
-        this.endDate = endDate;
-    }
-
-    public Room() {
+        this.price = price;
     }
 
     public String getType() {
@@ -25,36 +19,13 @@ public class Room extends Customer {
         this.type = type;
     }
 
-    public Date getStartDate() {
-        return startDate;
+    public int getPrice() {
+        return price;
     }
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
+    public void setPrice(int price) {
+        this.price = price;
     }
 
-    public Date getEndDate() {
-        return endDate;
-    }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
-
-    public int getRoomPrice(String type){
-        if(type.equals("A")) {
-            return 500;
-        } else if (type.equals("B")){
-            return 300;
-        } else return 100;
-    }
-
-    @Override
-    public String toString() {
-        return "RoomManager{" +
-                "type='" + type + '\'' +
-                ", startDate=" + startDate +
-                ", endDate=" + endDate +
-                "} " + super.toString();
-    }
 }
